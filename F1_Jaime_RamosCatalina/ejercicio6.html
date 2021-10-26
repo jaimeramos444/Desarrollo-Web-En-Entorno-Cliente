@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <script>
+
+    let contraseña1 = prompt("Introduce la contraseña")
+    let contraseña2 = prompt("Vuelve a introducir la contraseña")
+    let nota1 = parseInt(prompt("Introduce la nota de la asignatura 1: "))
+    let nota2 = parseInt(prompt("Introduce la nota de la asignatura 2: "))
+    let nota3 = parseInt(prompt("Introduce la nota de la asignatura 3: "))
+    let promedio;
+
+
+    promedio = (nota1+nota2+nota3)/3
+
+    if(contraseña1 == contraseña2){
+        document.write("Las dos contraseñas coinciden, ENHORABUENA<br>")
+    }else{
+        document.write("Las contraseñas no coinciden, LO SIENTO<br>")
+    }
+
+    if (promedio >= 7){
+        document.write("PROMOCIONADO<br>")
+    }else{
+        document.write("REPITE CURSO<br>")
+    }   
+
+
+    </script>
+    
+</body>
+</html>
