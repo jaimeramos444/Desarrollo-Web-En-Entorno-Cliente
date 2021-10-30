@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ciudades</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="ciudades"></div>
+    <script>
+        let ciudades = new Map([]);
+        let ciudad 
+        let habitantes 
+        let numCiu
+
+        let consultar = () => {
+
+            for (let [ciudad, cantidad] of ciudades) {
+            alert(`Ciudad: ${ciudad} || Habitantes: ${cantidad}`)
+            }
+        }
+
+        let numCiudades = () => {
+
+            numCiu = ciudades.size
+
+            alert("Hay "+numCiu+" ciudades en la lista")
+
+
+        }
+       
+
+        let anadir = () => {
+
+            ciudad = prompt("Nombre de la ciudad a introducir: ")
+
+            habitantes = prompt("Numero de habitantes de la ciudad: ")
+
+            ciudades.set(ciudad,habitantes)
+
+
+        }
+
+        let borrar = () => {
+
+            ciudadBo = prompt("Nombre de la ciudad que quiere eliminar: ")
+
+            ciudades.delete(ciudadBo)
+
+
+        }   
+
+    </script>
+
+    <h1>MENU</h1>
+
+    <button onclick="consultar()">Mostrar ciudades y habitantes</button>
+    <button onclick="numCiudades()"> Mostrar numero de ciudades </button>
+    <button onclick="anadir()">Añadir ciudad y habitantes</button>
+    <button onclick="borrar()">Borrar ciudad</button>
+
+
+</body>
+ 
+</html>
+
+
